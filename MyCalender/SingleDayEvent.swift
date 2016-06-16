@@ -8,6 +8,17 @@
 
 import Foundation
 import UIKit
-class SingleDayEvent : UIViewController{
+class SingleDayEvent : UIViewController {
+    
+    var calenderEvent : CalenderEvent?
+    
+    @IBOutlet weak var titleLabel : UILabel!
+    @IBOutlet weak var DateLabel : UILabel!
+    
+    override func viewDidLoad() {
+       titleLabel.text = calenderEvent?.title
+        DateLabel.text = calenderEvent?.dateString
+    
+    }
    
 }

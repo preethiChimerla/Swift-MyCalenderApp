@@ -16,6 +16,7 @@
 		DFB0AAA91D124C86006EC6CC /* DaysScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0AAA81D124C86006EC6CC /* DaysScene.swift */; };
 		DFB0AAAB1D124C93006EC6CC /* DaysEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0AAAA1D124C93006EC6CC /* DaysEvents.swift */; };
 		DFB0AAAD1D124CA1006EC6CC /* SingleDayEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0AAAC1D124CA1006EC6CC /* SingleDayEvent.swift */; };
+		DFB0AAAF1D128E98006EC6CC /* CalenderEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0AAAE1D128E98006EC6CC /* CalenderEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		DFB0AAA81D124C86006EC6CC /* DaysScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysScene.swift; sourceTree = "<group>"; };
 		DFB0AAAA1D124C93006EC6CC /* DaysEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysEvents.swift; sourceTree = "<group>"; };
 		DFB0AAAC1D124CA1006EC6CC /* SingleDayEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDayEvent.swift; sourceTree = "<group>"; };
+		DFB0AAAE1D128E98006EC6CC /* CalenderEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				DFB0AAA61D124C77006EC6CC /* MonthsScene.swift */,
 				DFB0AAA81D124C86006EC6CC /* DaysScene.swift */,
 				DFB0AAAA1D124C93006EC6CC /* DaysEvents.swift */,
+				DFB0AAAE1D128E98006EC6CC /* CalenderEvent.swift */,
 				DFB0AAAC1D124CA1006EC6CC /* SingleDayEvent.swift */,
 				DFB0AA8D1D12480D006EC6CC /* Images.xcassets */,
 				DFB0AA8F1D12480D006EC6CC /* LaunchScreen.xib */,
@@ -225,6 +228,7 @@
 				DFB0AA871D12480D006EC6CC /* AppDelegate.swift in Sources */,
 				DFB0AAA71D124C77006EC6CC /* MonthsScene.swift in Sources */,
 				DFB0AAAB1D124C93006EC6CC /* DaysEvents.swift in Sources */,
+				DFB0AAAF1D128E98006EC6CC /* CalenderEvent.swift in Sources */,
 				DFB0AAAD1D124CA1006EC6CC /* SingleDayEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

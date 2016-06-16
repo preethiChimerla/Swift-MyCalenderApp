@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jCv-zH-wZe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--MyCalender-->
@@ -136,9 +137,37 @@
                     <view key="view" contentMode="scaleToFill" id="6kg-BD-8zu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7B-Az-Fo6">
+                                <rect key="frame" x="0.0" y="64" width="468" height="59"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3X-hG-olM">
+                                <rect key="frame" x="9" y="138" width="575" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h3X-hG-olM" firstAttribute="top" secondItem="d7B-Az-Fo6" secondAttribute="bottom" constant="15" id="0G0-PN-rzp"/>
+                            <constraint firstItem="d7B-Az-Fo6" firstAttribute="top" secondItem="26U-Xx-4gJ" secondAttribute="bottom" constant="38" id="8D4-JN-L7o"/>
+                            <constraint firstItem="h3X-hG-olM" firstAttribute="trailing" secondItem="6kg-BD-8zu" secondAttribute="trailingMargin" id="B2U-oe-8cw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d7B-Az-Fo6" secondAttribute="trailing" constant="116" id="Oxz-lP-j0K"/>
+                            <constraint firstItem="h3X-hG-olM" firstAttribute="leading" secondItem="6kg-BD-8zu" secondAttribute="leadingMargin" constant="-7" id="Vld-r9-hQj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d7B-Az-Fo6" secondAttribute="trailing" constant="521" id="rh2-A4-inv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="DateLabel" destination="h3X-hG-olM" id="iM5-qM-rO4"/>
+                        <outlet property="titleLabel" destination="d7B-Az-Fo6" id="X71-aq-Pjb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIF-Ua-zct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
